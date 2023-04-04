@@ -8,17 +8,22 @@ function Home(props) {
     return (
         <>
             <Header />
-            <div class="container">
+            {/* <div class="container">
                 {
                 data.map(Tours => {
                     return(
-                        <Tours toursName={Tours.name} image={Tours.image}/>
+                        <Tours />
                     )
                 })
                 }
-            </div>
+            </div> */}
+            {
+                data.map(item =>{
+                    return(<Tours name={item.name} image={item.image} />)
+                })
+            }
              <Footer />
         </>
     )
 }
-export default Home
+export default Home;
