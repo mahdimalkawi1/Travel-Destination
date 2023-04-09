@@ -4,7 +4,6 @@ import Header from "../Header/Header";
 
 
 function Home(props) {
-    const data=props.data
     return (
         <>
         {/* <Header/> */}

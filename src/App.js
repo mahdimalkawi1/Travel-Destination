@@ -9,7 +9,7 @@ import Footer from "./components/Footer/Footer";
 const data = require("./data/db.json")
 
 function App() {
-
+// console.log(data);
     return (
         <>
             <Navbar />
@@ -17,7 +17,7 @@ function App() {
         <div className="App">
             <Routes>
                 <Route path="/" element={<Home data={data}/>}></Route>
-                <Route path="/city/:id" element={<TourDetails/>}></Route>
+                {/* <Route path="/city/:id" element={<TourDetails/>}></Route> */}
 
             </Routes>
         <Footer />
