@@ -6,7 +6,7 @@ import Header from "../Header/Header";
 function Home(props) {
     return (
         <>
-        {/* <Header/> */}
+        <Header/>
             <Tours data={props.data}/>
         </>
     )

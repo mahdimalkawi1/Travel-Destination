@@ -1,23 +1,21 @@
 import Tour from "./Tour/tour";
 import { Link } from "react-router-dom";
-import Footer from "../Footer/Footer";
-function Tours(props) {
-    console.log(props.data)
+import data from "../../data/db.json"
+function Tours() {
+    console.log(data)
     return (
         <>
             {
-                props.data.map(tour =>{
+                data.map(tour =>{
                     return(
-                        <h1>{tour}</h1>
-                        // <div key={tour.id}>
-                        //     <Link to={`/city/${tour.id}`}>
-                        //     <Tour name={tour.name} image={tour.image} />
-                        //     </Link>
-                        //     </div>
+                        <div key={tour.id}>
+                            <Link to={`/city/${tour.id}`}>
+                            <Tour name={tour.name} image={tour.image} />
+                            </Link>
+                            </div>
                     )
                 })
             }
-             <Footer />
              </>
     )
 }

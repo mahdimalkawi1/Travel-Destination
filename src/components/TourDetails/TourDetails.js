@@ -13,7 +13,7 @@ return(
             return(
                 <div>
                     <h2>{element.name}</h2>
-                    <img src={element.imgage} alt={element.name}/>
+                    <img src={element.image} alt={element.name}/>
                     <p>{element.price}</p>
                     <div>
                         {
@@ -34,9 +34,7 @@ return(
     })
 }
 </>
-    // <>
-    // <h2>hi the id is {id}</h2>
-    // </>
+   
 )
 
 }
